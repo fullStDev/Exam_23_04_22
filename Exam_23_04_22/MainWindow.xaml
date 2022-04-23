@@ -1,0 +1,35 @@
+﻿<Window x:Class="Exam_23_04_22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam_23_04_22"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="loginTextBox" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                 Height="50" Width="300" Margin="0,0,0,150" FontSize="26"/>
+
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                 Height="50" Width="300" Margin="0,50,0,0" FontSize="26" Visibility="Hidden"/>
+
+        <PasswordBox x:Name="passwordPasswordBox" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                     Height="50" Width="300" Margin="0,50,0,0" FontSize="26"/>
+
+        <Label x:Name="loginLabel" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center"
+               Height="50" Width="300" Margin="0,0,0,250" Content="Логин" FontSize="26"/>
+
+        <Label x:Name="passwordLabel" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                 Height="50" Width="300" Margin="0,0,0,50" Content="Пароль" FontSize="26"/>
+
+        <Button x:Name="showHideButton" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"
+                Height="20" Width="110" Margin="190,130,0,0" Content="Показать пароль" FontSize="12" Click="showHideButton_Click"/>
+
+        <Button x:Name="authorizationButton" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center"
+                Height="40" Width="160" Margin="0,250,0,0" Content="Войти" FontSize="26" Click="authorizationButton_Click"/>
+        
+
+
+
+    </Grid>
+</Window>
